@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download the latest version / دانلود آخرین نسخه
+    url: https://github.com/miladdhs/activityflow-persian-time-tracker/releases/latest
+    about: Many issues are already fixed in the newest release.
+  - name: Report a security vulnerability
+    url: https://github.com/miladdhs/activityflow-persian-time-tracker/security/advisories/new
+    about: Please report security issues privately.

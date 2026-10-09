@@ -1,0 +1,20 @@
+name: Feature request / پیشنهاد امکان جدید
+description: Suggest an idea for ActivityFlow. / ایده‌ای برای بهتر شدن برنامه
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve? / چه مشکلی را حل می‌کند؟
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution / راه‌حل پیشنهادی
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or extra context / توضیحات بیشتر

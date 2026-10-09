@@ -1,0 +1,45 @@
+name: Bug report / گزارش باگ
+description: Something doesn't work as expected. / چیزی درست کار نمی‌کند.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! You can write in English or Persian. / می‌توانید فارسی یا انگلیسی بنویسید.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / چه اتفاقی افتاد؟
+      description: A clear description of the bug and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / مراحل تکرار
+      placeholder: |
+        1. Go to …
+        2. Click …
+        3. See error
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: ActivityFlow version / نسخه برنامه
+      description: Settings → About / تنظیمات ← درباره برنامه
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Windows version
+      options: ["Windows 11", "Windows 10", "Other"]
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log / screenshots
+      description: Attach screenshots or the log file from `%LOCALAPPDATA%\ActivityFlow\logs` if available.

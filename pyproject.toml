@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "activityflow"
+dynamic = ["version", "dependencies"]
+description = "Offline Persian (Farsi) activity tracker, timesheet and project manager for Windows — Jalali calendar, RTL UI, Excel/PDF reports."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Milad Dhs" }]
+requires-python = ">=3.11"
+keywords = [
+    "time-tracker", "timesheet", "activity-tracker", "project-management", "productivity",
+    "persian", "farsi", "rtl", "jalali", "shamsi", "offline", "desktop-app", "windows",
+    "pyside6", "qt", "sqlite", "reports", "excel", "pdf",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Win32 (MS Windows)",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: End Users/Desktop",
+    "Natural Language :: Persian",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Scheduling",
+    "Topic :: Office/Business",
+]
+
+[project.urls]
+Homepage = "https://github.com/miladdhs/activityflow-persian-time-tracker"
+Download = "https://github.com/miladdhs/activityflow-persian-time-tracker/releases/latest"
+Issues = "https://github.com/miladdhs/activityflow-persian-time-tracker/issues"
+Changelog = "https://github.com/miladdhs/activityflow-persian-time-tracker/blob/main/CHANGELOG.md"
+
+[project.gui-scripts]
+activityflow = "app.main:run"
+
+[tool.setuptools.dynamic]
+version = { attr = "app.APP_VERSION" }
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.setuptools.package-data]
+app = ["resources/**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+ignore = ["E501"]
