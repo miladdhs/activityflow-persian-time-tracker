@@ -55,7 +55,7 @@ jobs:
           "zip=$zip" >> $env:GITHUB_OUTPUT
           "exe=$exe" >> $env:GITHUB_OUTPUT
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: ${{ steps.meta.outputs.name }}-${{ steps.meta.outputs.version }}
           path: |
