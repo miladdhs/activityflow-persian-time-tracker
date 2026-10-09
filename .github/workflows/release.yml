@@ -74,11 +74,12 @@ jobs:
             ${{ steps.files.outputs.exe }}
             dist/SHA256SUMS.txt
           body: |
-            ## Download
-            Download **${{ steps.meta.outputs.name }}-${{ steps.meta.outputs.version }}-windows-x64.zip**, extract it and run `${{ steps.meta.outputs.name }}.exe` — no installation needed (Windows 10/11, 64-bit).
+            ## دانلود
+            فایل **${{ steps.meta.outputs.name }}-${{ steps.meta.outputs.version }}-windows-x64.zip** را دانلود کنید، از حالت فشرده خارج کنید و `${{ steps.meta.outputs.name }}.exe` را اجرا کنید — بدون نیاز به نصب (ویندوز ۱۰ و ۱۱، ۶۴ بیتی).
 
-            دانلود فایل zip، خارج کردن از حالت فشرده و اجرای `${{ steps.meta.outputs.name }}.exe` — بدون نیاز به نصب.
+            > اگر پیام «Windows protected your PC» نمایش داده شد، روی **More info** و سپس **Run anyway** کلیک کنید (فایل امضای دیجیتال ندارد).
 
-            > If Windows SmartScreen appears, click **More info → Run anyway** (the EXE is not code-signed).
+            تغییرات این نسخه: [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md)
 
-            See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) for details.
+            ---
+            **English:** download the zip, extract it and run `${{ steps.meta.outputs.name }}.exe` — no installation needed. See [README.en.md](https://github.com/${{ github.repository }}/blob/main/README.en.md).

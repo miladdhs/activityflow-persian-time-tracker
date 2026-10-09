@@ -1,100 +1,98 @@
 <div align="center">
 
-<img src="docs/logo.png" width="96" alt="ActivityFlow logo">
+<img src="docs/logo.png" width="96" alt="لوگوی ActivityFlow">
 
-# ActivityFlow — Persian Time Tracker & Project Manager
+# ActivityFlow | نرم‌افزار فارسی ثبت فعالیت و مدیریت پروژه
 
-**Offline Persian (Farsi) activity tracker, timesheet and project manager for Windows.**<br>
-Log what you do, see where your time goes, and export beautiful monthly reports — with a native RTL interface and the Jalali (Shamsi) calendar.
+**نرم‌افزار رایگان و آفلاین ویندوز برای ثبت فعالیت‌های روزانه، تایم‌شیت، مدیریت پروژه و گزارش‌گیری ساعت کاری — با تقویم شمسی و رابط کاملاً فارسی (راست‌به‌چپ)**
 
-**نرم‌افزار فارسی ثبت فعالیت، تایم‌شیت و مدیریت پروژه — آفلاین، رایگان و متن‌باز**
+<sub>Offline Persian (Farsi) time tracker, timesheet & project manager for Windows — Jalali calendar, RTL UI, Excel/PDF reports</sub>
 
-[![Latest release](https://img.shields.io/github/v/release/miladdhs/activityflow-persian-time-tracker?style=flat-square&color=8B5CF6&label=release)](https://github.com/miladdhs/activityflow-persian-time-tracker/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/miladdhs/activityflow-persian-time-tracker/total?style=flat-square&color=8B5CF6)](https://github.com/miladdhs/activityflow-persian-time-tracker/releases)
-[![Tests](https://img.shields.io/github/actions/workflow/status/miladdhs/activityflow-persian-time-tracker/ci.yml?branch=main&style=flat-square&label=tests)](https://github.com/miladdhs/activityflow-persian-time-tracker/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-34D399?style=flat-square)](LICENSE)
-<br>
-[![Windows 10/11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=flat-square&logo=windows&logoColor=white)](#-download)
-[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Qt for Python](https://img.shields.io/badge/PySide6-Qt%206-41CD52?style=flat-square&logo=qt&logoColor=white)](https://doc.qt.io/qtforpython-6/)
-[![SQLite](https://img.shields.io/badge/SQLite-offline-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+[![آخرین نسخه](https://img.shields.io/github/v/release/miladdhs/activityflow-persian-time-tracker?style=flat-square&color=8B5CF6&label=release)](https://github.com/miladdhs/activityflow-persian-time-tracker/releases/latest)
+[![دانلودها](https://img.shields.io/github/downloads/miladdhs/activityflow-persian-time-tracker/total?style=flat-square&color=8B5CF6)](https://github.com/miladdhs/activityflow-persian-time-tracker/releases)
+[![تست‌ها](https://img.shields.io/github/actions/workflow/status/miladdhs/activityflow-persian-time-tracker/ci.yml?branch=main&style=flat-square&label=tests)](https://github.com/miladdhs/activityflow-persian-time-tracker/actions/workflows/ci.yml)
+[![مجوز MIT](https://img.shields.io/badge/license-MIT-34D399?style=flat-square)](LICENSE)
+[![ویندوز ۱۰ و ۱۱](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=flat-square&logo=windows&logoColor=white)](#-دانلود-و-نصب)
 
-[**⬇ Download for Windows**](https://github.com/miladdhs/activityflow-persian-time-tracker/releases/latest) &nbsp;·&nbsp;
-[**مستندات فارسی**](README.fa.md) &nbsp;·&nbsp;
-[Features](#-features) &nbsp;·&nbsp;
-[Screenshots](#-screenshots) &nbsp;·&nbsp;
-[Build from source](#-run-from-source)
+[**⬇ دانلود نسخه ویندوز**](https://github.com/miladdhs/activityflow-persian-time-tracker/releases/latest) &nbsp;·&nbsp;
+[**English**](README.en.md) &nbsp;·&nbsp;
+[امکانات](#-امکانات) &nbsp;·&nbsp;
+[تصاویر](#-تصاویر-برنامه) &nbsp;·&nbsp;
+[سؤالات متداول](#-سؤالات-متداول)
 
-<img src="docs/banner.png" alt="ActivityFlow — offline Persian time tracker, timesheet and project manager for Windows with Jalali calendar and RTL interface">
+<img src="docs/banner.png" alt="ActivityFlow — نرم‌افزار فارسی آفلاین ثبت فعالیت، تایم‌شیت و مدیریت پروژه با تقویم شمسی">
 
 </div>
 
 ---
 
-## 💡 Why ActivityFlow?
+<div dir="rtl">
 
-Freelancers, content creators, developers and small teams in Iran and Persian-speaking countries all face the same question at the end of the month: **“How many hours did I actually work, on which project, and what did I produce?”**
+## 💡 چرا ActivityFlow؟
 
-Most time trackers are cloud-only, English-only, subscription-based and don't understand the Jalali calendar — so people end up with messy notes and Excel sheets.
+اگر فریلنسر، برنامه‌نویس، طراح، تولیدکننده محتوا یا مدیر یک تیم کوچک هستید، احتمالاً آخر هر ماه این سؤال را دارید:
+**«این ماه دقیقاً چند ساعت کار کردم، روی کدام پروژه، و چه خروجی‌ای تحویل دادم؟»**
 
-**ActivityFlow solves this with a fast, private, Persian-first desktop app:**
+بیشتر نرم‌افزارهای تایم‌ترکینگ آنلاین و انگلیسی هستند، اشتراک ماهانه می‌خواهند و تقویم شمسی را نمی‌شناسند؛ نتیجه می‌شود یادداشت‌های پراکنده و فایل‌های اکسل نامرتب.
 
-| The problem | How ActivityFlow solves it |
+**ActivityFlow این مشکل را با یک نرم‌افزار دسکتاپ سریع، خصوصی و کاملاً فارسی حل می‌کند:**
+
+| مشکل | راه‌حل ActivityFlow |
 | --- | --- |
-| Time trackers are online-only and need an account | **100% offline** — a single EXE, no sign-up, no internet, no telemetry |
-| No proper Persian / RTL support | Native **right-to-left UI**, Vazirmatn font, Persian digits, **Jalali (Shamsi) calendar** |
-| Hard to sum up the same task across projects | Same-named activities are **aggregated across all projects** in reports |
-| Hours are tracked, but output (clips, pages, items…) is not | Every activity can store a **quantity with a unit** — units are never mixed |
-| Month-end reporting takes hours | One-click **Excel, PDF and CSV** reports per month, year or custom range |
-| Fear of losing data | **Automatic daily backups**, one-click restore and JSON export |
+| نرم‌افزارها آنلاین هستند و ثبت‌نام می‌خواهند | **کاملاً آفلاین** — یک فایل EXE، بدون ثبت‌نام، بدون اینترنت |
+| پشتیبانی ضعیف از زبان فارسی | رابط **راست‌به‌چپ**، فونت وزیرمتن، ارقام فارسی و **تقویم شمسی** |
+| جمع زدن یک کار تکراری در پروژه‌های مختلف سخت است | فعالیت‌های هم‌نام در همه پروژه‌ها **خودکار تجمیع** می‌شوند |
+| فقط زمان ثبت می‌شود، نه مقدار خروجی | ثبت **مقدار با واحد** (کلیپ، عکس، صفحه، …) بدون قاطی شدن واحدها |
+| گزارش آخر ماه ساعت‌ها وقت می‌گیرد | گزارش ماهانه، سالانه یا بازه دلخواه با خروجی **Excel، PDF و CSV** |
+| نگرانی از دست رفتن اطلاعات | **پشتیبان‌گیری خودکار روزانه**، بازیابی با یک کلیک و خروجی JSON |
 
-## ✨ Features
+## ✨ امکانات
 
-- **Dashboard** — today's and this month's time compared to yesterday / last month, a 7-day activity chart, time share per project, recent activities and one-click re-logging of frequent tasks.
-- **Fast activity logging** — title with autocomplete and similar-title detection, project, category, Jalali date picker, duration **or** start/end time, quantity + unit, notes. Remembers your last choices; save with `Ctrl+Enter`.
-- **Activity history** — full-text search, filters (project, category, unit, date range), sorting, pagination, edit / duplicate / delete, CSV export.
-- **Project management** — colored project cards with status (active, paused, completed, archived), totals and last activity. Deleting a project keeps its activity history.
-- **Reports & analytics** — monthly, yearly or custom periods; group by activity title, project or category; trend chart, donut chart, category breakdown and drill-down into the exact records behind every number.
-- **Export** — styled **Excel (.xlsx)** workbook (RTL, multiple sheets), print-ready **PDF**, and UTF-8 **CSV** that opens correctly in Excel.
-- **Data safety** — SQLite in WAL mode, daily automatic backups (last 10 kept), manual backup/restore with integrity checks, and a safety copy before every restore.
-- **Customizable** — Persian or Latin digits, Jalali or Gregorian calendar, your own categories and units, merge duplicate titles.
-- **Polished desktop UX** — modern dark theme, smooth page transitions, toast notifications with actions, keyboard shortcuts, single-instance protection, dark Windows title bar, HiDPI-ready.
+- **داشبورد**: زمان فعالیت امروز و این ماه با مقایسه نسبت به دیروز و ماه قبل، نمودار ۷ روز گذشته، سهم هر پروژه، آخرین فعالیت‌ها و ثبت دوباره فعالیت‌های پرتکرار با یک کلیک.
+- **ثبت سریع فعالیت**: عنوان با پیشنهاد خودکار و تشخیص عناوین مشابه، پروژه، نوع فعالیت، انتخاب تاریخ شمسی، مدت‌زمان مستقیم **یا** ساعت شروع و پایان، مقدار با واحد و توضیحات. آخرین انتخاب‌ها را به خاطر می‌سپارد؛ ثبت با `Ctrl+Enter`.
+- **تاریخچه فعالیت‌ها**: جست‌وجو، فیلتر بر اساس پروژه، نوع، واحد و بازه تاریخ، مرتب‌سازی، صفحه‌بندی، ویرایش، کپی و حذف، خروجی CSV.
+- **مدیریت پروژه‌ها**: کارت‌های رنگی پروژه با وضعیت فعال، متوقف، تکمیل‌شده و بایگانی‌شده؛ مجموع زمان و آخرین فعالیت. حذف پروژه، سوابق فعالیت‌ها را پاک نمی‌کند.
+- **گزارش‌گیری و تحلیل**: ماهانه، سالانه یا بازه دلخواه؛ گروه‌بندی بر اساس عنوان فعالیت، پروژه یا نوع؛ نمودار روند، نمودار دایره‌ای، تفکیک انواع و نمایش رکوردهای تشکیل‌دهنده هر عدد.
+- **خروجی گرفتن**: فایل **Excel** راست‌چین و چندبرگه‌ای، **PDF** آماده چاپ و **CSV** که در اکسل درست باز می‌شود.
+- **امنیت اطلاعات**: پایگاه داده SQLite، پشتیبان خودکار روزانه (۱۰ نسخه آخر)، پشتیبان‌گیری و بازیابی دستی با بررسی سلامت فایل و نسخه ایمنی قبل از هر بازیابی.
+- **قابل تنظیم**: ارقام فارسی یا لاتین، تقویم شمسی یا میلادی، تعریف انواع فعالیت و واحدهای دلخواه، ادغام عناوین تکراری.
+- **تجربه کاربری حرفه‌ای**: تم تیره مدرن، انیمیشن نرم بین صفحات، اعلان‌های کوتاه، میانبرهای صفحه‌کلید، جلوگیری از اجرای هم‌زمان دو نسخه و نوار عنوان تیره ویندوز.
 
-## 📸 Screenshots
+## 📸 تصاویر برنامه
 
-| Dashboard | Log an activity |
+| داشبورد | ثبت فعالیت |
 | :---: | :---: |
-| ![ActivityFlow dashboard with daily and monthly time tracking statistics](docs/screenshots/dashboard.png) | ![Persian activity entry form with Jalali date and duration](docs/screenshots/entry.png) |
-| **Reports (Excel / PDF export)** | **Activity history & timesheet** |
-| ![Monthly time report grouped by activity, project and category](docs/screenshots/reports.png) | ![Searchable activity history with filters and CSV export](docs/screenshots/history.png) |
-| **Projects** | **Settings & backups** |
-| ![Project management cards with status and total hours](docs/screenshots/projects.png) | ![Settings with Jalali calendar, Persian digits and automatic backup](docs/screenshots/settings.png) |
+| ![داشبورد نرم‌افزار ثبت فعالیت](docs/screenshots/dashboard.png) | ![فرم ثبت فعالیت با تاریخ شمسی](docs/screenshots/entry.png) |
+| **گزارش‌ها (خروجی Excel و PDF)** | **تاریخچه فعالیت‌ها** |
+| ![گزارش ماهانه ساعت کاری](docs/screenshots/reports.png) | ![تاریخچه و تایم‌شیت فعالیت‌ها](docs/screenshots/history.png) |
+| **پروژه‌ها** | **تنظیمات و پشتیبان‌گیری** |
+| ![مدیریت پروژه‌ها](docs/screenshots/projects.png) | ![تنظیمات تقویم شمسی و پشتیبان‌گیری](docs/screenshots/settings.png) |
 
 <details>
-<summary><b>More screenshots — dialogs, Jalali date picker, drill-down</b></summary>
+<summary><b>تصاویر بیشتر — دیالوگ‌ها، تقویم شمسی، جزئیات گزارش</b></summary>
 <br>
 
-| Edit activity | Report drill-down |
+| ویرایش فعالیت | جزئیات گزارش |
 | :---: | :---: |
-| ![Edit activity dialog](docs/screenshots/dialog-activity.png) | ![Report details dialog](docs/screenshots/dialog-details.png) |
-| **Jalali (Shamsi) date picker** | **Merge activity titles** |
-| ![Jalali calendar date picker](docs/screenshots/popup-calendar.png) | ![Manage and merge activity titles](docs/screenshots/dialog-titles.png) |
+| ![ویرایش فعالیت](docs/screenshots/dialog-activity.png) | ![جزئیات ردیف گزارش](docs/screenshots/dialog-details.png) |
+| **انتخاب تاریخ شمسی** | **مدیریت و ادغام عناوین** |
+| ![تقویم شمسی](docs/screenshots/popup-calendar.png) | ![ادغام عناوین فعالیت](docs/screenshots/dialog-titles.png) |
 
 </details>
 
-## ⬇ Download
+## ⬇ دانلود و نصب
 
-1. Go to the [**latest release**](https://github.com/miladdhs/activityflow-persian-time-tracker/releases/latest).
-2. Download `ActivityFlow-<version>-windows-x64.zip`, extract it and run **`ActivityFlow.exe`**.
-   No installation, no Python and no internet connection required.
+۱. به صفحه [**آخرین نسخه**](https://github.com/miladdhs/activityflow-persian-time-tracker/releases/latest) بروید.<br>
+۲. فایل `ActivityFlow-<version>-windows-x64.zip` را دانلود و از حالت فشرده خارج کنید.<br>
+۳. فایل **`ActivityFlow.exe`** را اجرا کنید. نیازی به نصب، پایتون یا اینترنت نیست.
 
 > [!NOTE]
-> The EXE is not code-signed, so Windows SmartScreen may show *“Windows protected your PC”* the first time.
-> Click **More info → Run anyway**. You can always [build it yourself](#-build-the-exe) from this source code.
+> فایل اجرایی امضای دیجیتال ندارد؛ برای همین ممکن است بار اول ویندوز پیام «Windows protected your PC» نشان دهد.
+> روی **More info** و سپس **Run anyway** کلیک کنید. همچنین می‌توانید خودتان برنامه را [از روی سورس بسازید](#-ساخت-فایل-اجرایی).
 
-## 🚀 Run from source
+## 🚀 اجرا از سورس
 
-Requires **Python 3.11+** on Windows.
+به **Python 3.11 یا جدیدتر** روی ویندوز نیاز دارید:
 
 ```powershell
 git clone https://github.com/miladdhs/activityflow-persian-time-tracker.git
@@ -104,159 +102,104 @@ python -m venv .venv
 .\.venv\Scripts\python main.py
 ```
 
-Try it with realistic sample data (stored in a separate folder — your real data is untouched):
+برای امتحان با داده نمونه (در پوشه‌ای جدا و بدون دست زدن به اطلاعات واقعی):
 
 ```powershell
 .\scripts\run.ps1 -Demo
 ```
 
-## 📦 Build the EXE
+## 📦 ساخت فایل اجرایی
 
 ```powershell
-.\scripts\build.ps1                 # folder build  -> dist\ActivityFlow\ActivityFlow.exe (fastest start-up)
-.\scripts\build.ps1 -OneFile        # portable EXE  -> dist\ActivityFlow.exe
-.\scripts\build.ps1 -OneFile -Zip   # + release zip -> dist\ActivityFlow-<version>-windows-x64.zip
+.\scripts\build.ps1                 # نسخه پوشه‌ای (سریع‌ترین اجرا)
+.\scripts\build.ps1 -OneFile        # نسخه تک‌فایلی قابل حمل
+.\scripts\build.ps1 -OneFile -Zip   # به‌همراه فایل zip برای انتشار
 ```
 
-The build script runs the test suite first, regenerates the icon and embeds version information read from
-[`app/__init__.py`](app/__init__.py) — the single source of truth for the app name and version.
+اسکریپت ساخت ابتدا تست‌ها را اجرا می‌کند و نام و نسخه برنامه را از [`app/__init__.py`](app/__init__.py) می‌خواند (تنها محل تعریف نسخه).
+برای انتشار نسخه جدید کافی است `APP_VERSION` را تغییر دهید و یک تگ مثل `v1.0.0` را push کنید؛ GitHub Actions فایل EXE را می‌سازد و در بخش Releases منتشر می‌کند.
 
-**Publishing a release** is automated: bump `APP_VERSION`, add a [CHANGELOG](CHANGELOG.md) entry, then push a tag —
-GitHub Actions builds the EXE and attaches it to a new release.
+## 🔒 حریم خصوصی و محل ذخیره اطلاعات
 
-```powershell
-git tag v1.0.0
-git push origin v1.0.0
-```
+- همه اطلاعات فقط روی رایانه شما و در مسیر `%LOCALAPPDATA%\ActivityFlow` ذخیره می‌شود؛ جایگزین کردن EXE با نسخه جدید اطلاعات را پاک نمی‌کند.
+- برنامه **هیچ درخواست اینترنتی** ارسال نمی‌کند. لینک‌های صفحه «درباره» فقط با کلیک شما در مرورگر باز می‌شوند.
+- نسخه‌های پشتیبان خودکار در پوشه `backups` نگهداری می‌شوند و از بخش **تنظیمات** می‌توانید پشتیبان بگیرید، بازیابی کنید یا خروجی JSON بگیرید.
 
-## 🔒 Privacy, data & backups
+## ⌨️ میانبرهای صفحه‌کلید
 
-- Everything stays on your computer in `%LOCALAPPDATA%\ActivityFlow` (database, backups and logs).
-  Replacing the EXE with a newer version never touches your data.
-- ActivityFlow makes **no network requests**. The only links in the app (project page, report a bug) open in your browser when you click them.
-- Daily automatic backups are kept in the `backups` folder; you can also back up, restore or export everything to JSON from **Settings**.
-- For testing, the data folder can be redirected with the `ACTIVITYFLOW_DATA_DIR` environment variable.
-
-## ⌨️ Keyboard shortcuts
-
-| Shortcut | Action |
+| میانبر | کار |
 | --- | --- |
-| `Ctrl` + `N` | New activity (from any page) |
-| `Ctrl` + `Enter` / `Ctrl` + `S` | Save the activity form |
-| `Ctrl` + `1` … `Ctrl` + `6` | Dashboard, New activity, History, Projects, Reports, Settings |
-| `Ctrl` + `F` | Search activities / projects |
-| `F5` | Refresh the current page |
-| `↑` / `↓` | Change time or date in the focused field |
+| `Ctrl` + `N` | فعالیت جدید از هر صفحه |
+| `Ctrl` + `Enter` یا `Ctrl` + `S` | ثبت فرم فعالیت |
+| `Ctrl` + `1` تا `Ctrl` + `6` | داشبورد، ثبت فعالیت، تاریخچه، پروژه‌ها، گزارش‌ها، تنظیمات |
+| `Ctrl` + `F` | جست‌وجو |
+| `F5` | بارگذاری دوباره صفحه |
+| `↑` / `↓` | تغییر ساعت یا تاریخ در فیلد فعال |
 
-## 🏗 Architecture
+## 🏗 معماری و ساختار پروژه
 
-A clean, layered design: the UI never talks to the database directly, and all business rules live in plain-Python services that are fully unit-tested.
-
-```mermaid
-flowchart LR
-    UI["UI — PySide6<br/>pages · dialogs · widgets · theme"] --> S["Services<br/>activities · projects · stats · reports · backup"]
-    S --> D["Database<br/>SQLAlchemy 2 · SQLite (WAL) · migrations"]
-    S --> R["Exporters<br/>Excel · PDF · CSV · JSON"]
-    UI -. events .-> UI
-    C["Core<br/>Jalali calendar · Persian text · formatting"] --- UI
-    C --- S
-```
+معماری لایه‌ای و تمیز: رابط کاربری مستقیماً با پایگاه داده کار نمی‌کند و همه قواعد کسب‌وکار در سرویس‌های پایتونی تست‌شده قرار دارند.
 
 ```text
 app/
-├── core/        Jalali calendar, Persian digit/text normalization, formatting, paths, setting keys
-├── database/    engine (SQLite WAL), versioned migrations, first-run seed data
-├── models/      SQLAlchemy ORM models
-├── services/    business logic: activities, projects, lookups, stats, reports, backups, settings
-├── reports/     Excel, PDF and CSV exporters
-├── ui/          main window, pages, dialogs, reusable widgets, design tokens + QSS theme
-└── resources/   Vazirmatn font, Iconly icons, logo
-tests/           core, services, settings and end-to-end UI tests (offscreen Qt)
-scripts/         run, build, demo data, screenshots, icon and banner generators
-packaging/       PyInstaller spec (version info generated from app metadata)
-docs/            screenshots, banner and the design system
+├── core/        تقویم شمسی، نرمال‌سازی متن و ارقام فارسی، قالب‌بندی، مسیرها، کلیدهای تنظیمات
+├── database/    موتور SQLite، مهاجرت‌های نسخه‌دار و داده‌های اولیه
+├── models/      مدل‌های SQLAlchemy
+├── services/    منطق برنامه: فعالیت‌ها، پروژه‌ها، آمار، گزارش‌ها، پشتیبان‌گیری، تنظیمات
+├── reports/     خروجی Excel، PDF و CSV
+├── ui/          پنجره اصلی، صفحات، دیالوگ‌ها، کامپوننت‌ها و تم (توکن‌های طراحی + QSS)
+└── resources/   فونت وزیرمتن، آیکون‌های Iconly، لوگو
+tests/           تست‌های هسته، سرویس‌ها، تنظیمات و تست کامل رابط کاربری
+scripts/         اجرا، ساخت، داده نمونه، تصویربرداری، ساخت آیکون و بنر
+packaging/       تنظیمات PyInstaller
+docs/            تصاویر، بنر و سیستم طراحی
 ```
 
-## 🧰 Tech stack
+**فناوری‌ها:** Python · PySide6 (Qt 6) · SQLite · SQLAlchemy 2 · openpyxl · PyInstaller · pytest · Ruff · GitHub Actions
 
-| Layer | Technology |
-| --- | --- |
-| Language | Python 3.11+ |
-| GUI | PySide6 (Qt 6 Widgets) with a custom design system ([docs/design-system.md](docs/design-system.md)) |
-| Storage | SQLite + SQLAlchemy 2 |
-| Reports | openpyxl (Excel), Qt PDF writer (PDF), CSV |
-| Packaging | PyInstaller (single-file or folder build) |
-| Quality | pytest (unit + offscreen UI tests), Ruff, GitHub Actions CI |
-
-## 🧪 Tests & code quality
-
-```powershell
-$env:QT_QPA_PLATFORM = "offscreen"
-.\.venv\Scripts\python -m pytest     # unit, service and end-to-end UI tests
-.\.venv\Scripts\python -m ruff check .
-```
-
-Every push and pull request runs lint and the full test suite on Windows via GitHub Actions.
-
-## 🗺 Roadmap
-
-- [ ] Live start/stop timer for the current activity
-- [ ] Light theme
-- [ ] English interface (i18n)
-- [ ] Windows installer and `winget` package
-- [ ] CSV / Excel import
-- [ ] Goals and weekly targets per project
-
-Have an idea? [Open a feature request](https://github.com/miladdhs/activityflow-persian-time-tracker/issues/new/choose).
-
-## ❓ FAQ
+## ❓ سؤالات متداول
 
 <details>
-<summary><b>Is ActivityFlow free?</b></summary>
+<summary><b>آیا ActivityFlow رایگان است؟</b></summary>
 
-Yes. It's free and open source under the MIT license — for personal and commercial use.
+بله، کاملاً رایگان و متن‌باز با مجوز MIT؛ برای استفاده شخصی و تجاری.
 </details>
 
 <details>
-<summary><b>Does it work without internet?</b></summary>
+<summary><b>بدون اینترنت کار می‌کند؟</b></summary>
 
-Completely. ActivityFlow is an offline desktop app; your data never leaves your computer.
+بله، کاملاً آفلاین است و اطلاعات شما هیچ‌وقت از رایانه‌تان خارج نمی‌شود.
 </details>
 
 <details>
-<summary><b>Can I use the Gregorian calendar or Latin digits?</b></summary>
+<summary><b>می‌توانم از تاریخ میلادی یا ارقام انگلیسی استفاده کنم؟</b></summary>
 
-Yes — switch between Jalali/Gregorian and Persian/Latin digits in **Settings → Display**. The change applies everywhere, including reports.
+بله، از بخش **تنظیمات ← نمایش** تقویم و نوع ارقام را تغییر دهید؛ تغییر در همه صفحات و گزارش‌ها اعمال می‌شود.
 </details>
 
 <details>
-<summary><b>How do I move my data to another computer?</b></summary>
+<summary><b>چطور اطلاعاتم را به رایانه دیگری منتقل کنم؟</b></summary>
 
-Create a backup in **Settings → Backup**, copy the `.sqlite3` file to the new computer and use **Restore from file**.
+از **تنظیمات ← پشتیبان‌گیری** یک نسخه پشتیبان بگیرید، فایل `.sqlite3` را به رایانه جدید ببرید و گزینه **بازیابی از فایل** را بزنید.
 </details>
 
 <details>
-<summary><b>Does it run on macOS or Linux?</b></summary>
+<summary><b>آیا برای مک یا لینوکس هم نسخه دارد؟</b></summary>
 
-The code is cross-platform Qt, so it runs from source; official builds currently target Windows 10/11.
+کد بر پایه Qt و چندسکویی است و از سورس اجرا می‌شود؛ نسخه آماده فعلاً برای ویندوز ۱۰ و ۱۱ منتشر می‌شود.
 </details>
 
-## 🤝 Contributing
+## 🤝 مشارکت
 
-Contributions, bug reports and ideas are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) and use the
-[issue templates](https://github.com/miladdhs/activityflow-persian-time-tracker/issues/new/choose).
-For security issues see [SECURITY.md](SECURITY.md).
+از پیشنهادها، گزارش باگ و مشارکت شما استقبال می‌شود. لطفاً [راهنمای مشارکت](CONTRIBUTING.md) را بخوانید و از
+[قالب‌های Issue](https://github.com/miladdhs/activityflow-persian-time-tracker/issues/new/choose) استفاده کنید.
 
-If ActivityFlow saves you time, please **⭐ star the repository** — it helps other Persian-speaking users find it.
+اگر ActivityFlow به کارتان آمد، با **⭐ ستاره دادن به مخزن** کمک کنید کاربران فارسی‌زبان بیشتری آن را پیدا کنند.
 
-## 🙏 Acknowledgements
+## 📄 مجوز
 
-- [Vazirmatn](https://github.com/rastikerdar/vazirmatn) font by Saber Rastikerdar — SIL Open Font License 1.1
-- [Iconly](https://piqodesign.gumroad.com/l/iconly) icon set by Piqo Design
-- [Qt for Python](https://doc.qt.io/qtforpython-6/), [SQLAlchemy](https://www.sqlalchemy.org/), [openpyxl](https://openpyxl.readthedocs.io/), [PyInstaller](https://pyinstaller.org/)
+[MIT](LICENSE) © 2026 Milad Dhs — فونت [وزیرمتن](https://github.com/rastikerdar/vazirmatn) تحت مجوز SIL OFL 1.1
 
-## 📄 License
+</div>
 
-[MIT](LICENSE) © 2026 Milad Dhs
-
-<sub>Keywords: Persian time tracker, Farsi timesheet, Jalali calendar time tracking, Shamsi calendar, offline activity tracker, project time management, work hours report, freelancer timesheet, Windows desktop app, PySide6 · نرم افزار ثبت فعالیت روزانه، تایم شیت فارسی، مدیریت پروژه آفلاین، گزارش ساعت کاری ماهانه، نرم افزار مدیریت زمان، تقویم شمسی</sub>
+<sub>کلمات کلیدی: نرم افزار ثبت فعالیت روزانه، تایم شیت فارسی، نرم افزار مدیریت پروژه فارسی، مدیریت زمان، گزارش ساعت کاری ماهانه، ثبت ساعت کار فریلنسر، تقویم شمسی، نرم افزار آفلاین ویندوز، Persian time tracker, Farsi timesheet, Jalali calendar</sub>
